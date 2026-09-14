@@ -48,19 +48,19 @@ function HomepageHeader() {
 function QuickLinkCard({title, url, sublinks}) {
   return (
     <div className={clsx('col col--3', styles.cardCol)}>
-      <div className={clsx('card', styles.customCard)} style={{ display: 'flex', flexDirection: 'column', height: '100%', padding: '20px' }}>
-        <div className="card__header text--center" style={{ padding: '0 0 20px 0' }}>
-          <h3 style={{ fontSize: '1.8rem', margin: 0, fontWeight: 'bold', wordBreak: 'keep-all' }}>{title}</h3>
+      <div className={clsx('card', styles.customCard)} style={{ display: 'flex', flexDirection: 'column', height: '100%', padding: 'var(--ifm-spacing-md)' }}>
+        <div className="card__header text--center" style={{ padding: '0 0 var(--ifm-spacing-md) 0' }}>
+          <h3 style={{ fontSize: '1.6rem', margin: 0, fontWeight: '700', wordBreak: 'keep-all' }}>{title}</h3>
         </div>
-        <div className="card__body" style={{ display: 'flex', flexGrow: 1, alignItems: 'center', justifyContent: 'center', padding: '0 0 20px 0' }}>
-          <Link to={url} className="button button--primary button--lg button--block" style={{ fontSize: '1.3rem', padding: '12px' }}>
+        <div className="card__body" style={{ display: 'flex', flexGrow: 1, alignItems: 'center', justifyContent: 'center', padding: '0 0 var(--ifm-spacing-md) 0' }}>
+          <Link to={url} className="button button--secondary button--block" style={{ fontSize: '1.2rem', padding: 'var(--ifm-spacing-sm)', borderWidth: '2px', borderColor: 'var(--ifm-color-emphasis-300)' }}>
             🎮 Play
           </Link>
         </div>
         {sublinks && sublinks.length > 0 && (
-          <div className="card__footer" style={{ borderTop: '1px solid var(--ifm-color-emphasis-200)', marginTop: 'auto', paddingTop: '20px', display: 'flex', gap: '8px', flexWrap: 'wrap', justifyContent: 'center' }}>
+          <div className="card__footer" style={{ borderTop: '1px solid var(--ifm-color-emphasis-200)', marginTop: 'auto', paddingTop: 'var(--ifm-spacing-md)', display: 'flex', gap: 'var(--ifm-spacing-sm)', flexWrap: 'wrap', justifyContent: 'center' }}>
             {sublinks.map((sub, i) => (
-              <Link key={i} to={sub.url} className="button button--secondary button--sm" style={{ flexGrow: 1, minWidth: '40%', fontSize: '0.95rem' }}>
+              <Link key={i} to={sub.url} className="button button--secondary button--sm" style={{ flexGrow: 1, minWidth: '40%', fontSize: '0.9rem', backgroundColor: 'transparent', border: '1px solid var(--ifm-color-emphasis-200)' }}>
                 {sub.label}
               </Link>
             ))}
@@ -79,7 +79,7 @@ export default function Home() {
       description="보드게임 모임 포털 - 규칙서 및 세션 기록">
       <HomepageHeader />
       <main>
-        <section className={styles.quickLinksSection} style={{ padding: '4rem 0' }}>
+        <section className={styles.quickLinksSection} style={{ padding: '3rem 0 5rem 0' }}>
           <div className="container">
             <div className="row">
               {QUICK_LINKS.map((props, idx) => (

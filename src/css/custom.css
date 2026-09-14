@@ -84,3 +84,19 @@ h1, h2, h3, h4, h5, h6 {
 [data-theme='light'] .button--primary {
   color: #ffffff !important;
 }
+
+/* StyleSeed: Interactive refinement */
+.card .card__body .button--secondary {
+  transition: all 0.2s ease;
+}
+
+.card:hover .card__body .button--secondary {
+  background-color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary) !important;
+  color: #ffffff !important;
+}
+
+.card .card__footer .button--secondary:hover {
+  background-color: var(--ifm-color-emphasis-100) !important;
+  border-color: var(--ifm-color-emphasis-400) !important;
+}
