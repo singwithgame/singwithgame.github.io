@@ -25,7 +25,9 @@ const QUICK_LINKS = [
   {
     title: 'Dalmuti',
     url: 'https://singwithgame.github.io/dalmuti',
-    sublinks: []
+    sublinks: [
+      { label: '📖 가이드', url: '/docs/common/the-great-dalmuti' }
+    ]
   },
   {
     title: 'Tichu',
