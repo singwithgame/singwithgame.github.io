@@ -2,8 +2,6 @@
 # label: 메뉴 이름
 # to: 이동할 링크 주소
 
-- label: "Home"
-  to: "/"
 - label: "Guides"
   to: "/docs/intro"
 - label: "BotC Logs"

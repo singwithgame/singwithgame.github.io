@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 # Avalon 게임 소개 및 캐릭터 가이드
 

@@ -1,5 +1,6 @@
 ---
 title: The Great Dalmuti 플레이 가이드
+sidebar_position: 2
 ---
 # 위대한 달무티 (The Great Dalmuti) 게임 가이드
 
