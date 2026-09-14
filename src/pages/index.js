@@ -95,23 +95,27 @@ export default function Home() {
         href="https://github.com/singwithgame/singwithgame.github.io/issues/new/choose" 
         target="_blank" 
         rel="noopener noreferrer"
-        className="button button--primary"
+        className="button button--secondary"
         style={{
           position: 'fixed',
           bottom: '30px',
-          left: '30px',
+          right: '30px',
           borderRadius: '50px',
-          padding: '12px 24px',
-          boxShadow: '0 4px 12px rgba(0,0,0,0.3)',
+          padding: '10px 20px',
+          boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
           zIndex: 100,
           display: 'flex',
           alignItems: 'center',
           gap: '8px',
-          fontSize: '1rem',
-          fontWeight: 'bold',
+          fontSize: '0.9rem',
+          fontWeight: '500',
+          opacity: 0.8,
+          transition: 'opacity 0.2s ease',
         }}
+        onMouseEnter={(e) => e.currentTarget.style.opacity = '1'}
+        onMouseLeave={(e) => e.currentTarget.style.opacity = '0.8'}
       >
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M12 20h9"></path>
           <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
         </svg>

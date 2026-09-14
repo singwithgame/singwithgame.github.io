@@ -10,7 +10,7 @@ if (!eventPath) {
 
 const eventData = JSON.parse(fs.readFileSync(eventPath, 'utf8'));
 const issue = eventData.issue;
-const labels = issue.labels.map(l => l.name);
+const titleRaw = issue.title;
 
 // Util: Extract section from Issue Body
 function extractSection(body, sectionName) {
@@ -22,16 +22,16 @@ function extractSection(body, sectionName) {
 // Generate Slug
 function slugify(text) {
   return text.toString().toLowerCase()
-    .replace(/\s+/g, '-')       // Replace spaces with -
-    .replace(/[^\w\-]+/g, '')   // Remove all non-word chars
-    .replace(/\-\-+/g, '-')     // Replace multiple - with single -
-    .replace(/^-+/, '')         // Trim - from start of text
-    .replace(/-+$/, '');        // Trim - from end of text
+    .replace(/\s+/g, '-')       
+    .replace(/[^\w\-]+/g, '')   
+    .replace(/\-\-+/g, '-')     
+    .replace(/^-+/, '')         
+    .replace(/-+$/, '');        
 }
 
 async function run() {
-  const isGuide = labels.includes('guide');
-  const isLog = labels.includes('log');
+  const isGuide = titleRaw.startsWith('[가이드]');
+  const isLog = titleRaw.startsWith('[로그]');
 
   if (!isGuide && !isLog) {
     console.log('Not a guide or log issue. Exiting.');
