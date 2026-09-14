@@ -1,0 +1,12 @@
+# 최상단 네비게이션 바 메뉴 설정
+# label: 메뉴 이름
+# to: 이동할 링크 주소
+
+- label: "Home"
+  to: "/"
+- label: "Guides"
+  to: "/docs/intro"
+- label: "BotC Logs"
+  to: "/botc-logs"
+- label: "Avalon Logs"
+  to: "/avalon-logs"

@@ -1,3 +1,5 @@
+const fs = require("fs");
+const yaml = require("js-yaml");
 // @ts-check
 // `@type` JSDoc annotations allow editor autocompletion and type checking
 // (when paired with `@ts-check`).
@@ -123,9 +125,12 @@ const config = {
           src: 'img/favicon.svg',
         },
         items: [
-          {to: '/docs/intro', label: 'Guides', position: 'left'},
-          {to: '/botc-logs', label: 'BotC Logs', position: 'left'},
-          {to: '/avalon-logs', label: 'Avalon Logs', position: 'left'},
+          ...yaml.load(fs.readFileSync('./config/navbar.yml', 'utf8')).map(item => ({...item, position: 'left'})),
+          {
+            href: 'https://github.com/singwithgame/singwithgame.github.io',
+            label: 'GitHub',
+            position: 'right',
+          },
         ],
       },
       
