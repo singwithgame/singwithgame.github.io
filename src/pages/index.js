@@ -50,17 +50,17 @@ function QuickLinkCard({title, url, sublinks}) {
     <div className={clsx('col col--3', styles.cardCol)}>
       <div className={clsx('card', styles.customCard)} style={{ display: 'flex', flexDirection: 'column', height: '100%', padding: '20px' }}>
         <div className="card__header text--center" style={{ padding: '0 0 20px 0' }}>
-          <h3 style={{ fontSize: '1.8rem', margin: 0, fontWeight: 'bold' }}>{title}</h3>
+          <h3 style={{ fontSize: '1.8rem', margin: 0, fontWeight: 'bold', wordBreak: 'keep-all' }}>{title}</h3>
         </div>
         <div className="card__body" style={{ display: 'flex', flexGrow: 1, alignItems: 'center', justifyContent: 'center', padding: '0 0 20px 0' }}>
-          <Link to={url} className="button button--primary button--lg button--block" style={{ fontSize: '1.4rem', padding: '15px' }}>
+          <Link to={url} className="button button--primary button--lg button--block" style={{ fontSize: '1.3rem', padding: '12px' }}>
             🎮 Play
           </Link>
         </div>
         {sublinks && sublinks.length > 0 && (
-          <div className="card__footer" style={{ borderTop: '1px solid var(--ifm-color-emphasis-200)', marginTop: 'auto', paddingTop: '20px', display: 'flex', gap: '10px' }}>
+          <div className="card__footer" style={{ borderTop: '1px solid var(--ifm-color-emphasis-200)', marginTop: 'auto', paddingTop: '20px', display: 'flex', gap: '8px', flexWrap: 'wrap', justifyContent: 'center' }}>
             {sublinks.map((sub, i) => (
-              <Link key={i} to={sub.url} className="button button--secondary button--md" style={{ flex: 1, fontSize: '1.1rem' }}>
+              <Link key={i} to={sub.url} className="button button--secondary button--sm" style={{ flexGrow: 1, minWidth: '40%', fontSize: '0.95rem' }}>
                 {sub.label}
               </Link>
             ))}
