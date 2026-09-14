@@ -50,16 +50,13 @@ function HomepageHeader() {
   );
 }
 
-function QuickLinkCard({title, description, url, sublinks}) {
+function QuickLinkCard({title, url, sublinks}) {
   return (
     <div className={clsx('col col--3', styles.cardCol)}>
       <div className={clsx('card', styles.customCard)}>
         <Link to={url} className={styles.cardLink}>
           <div className="card__header">
             <h3>{title}</h3>
-          </div>
-          <div className="card__body">
-            <p>{description}</p>
           </div>
         </Link>
         {sublinks && sublinks.length > 0 && (

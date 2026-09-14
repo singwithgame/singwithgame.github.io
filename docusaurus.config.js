@@ -70,6 +70,7 @@ const config = {
         path: './botc-logs',
         blogTitle: 'BotC Logs',
         blogSidebarTitle: '최근 기록',
+        blogSidebarCount: 'ALL',
         showReadingTime: false,
       },
     ],
@@ -81,6 +82,7 @@ const config = {
         path: './avalon-logs',
         blogTitle: 'Avalon Logs',
         blogSidebarTitle: '최근 기록',
+        blogSidebarCount: 'ALL',
         showReadingTime: false,
       },
     ],
@@ -98,15 +100,15 @@ const config = {
         title: 'Home',
         logo: {
           alt: 'Logo',
-          src: 'img/logo.svg',
+          src: 'img/favicon.svg',
         },
-        items: [],
+        items: [
+          {to: '/docs/botc/intro', label: 'Guides', position: 'left'},
+          {to: '/botc-logs', label: 'BotC Logs', position: 'left'},
+          {to: '/avalon-logs', label: 'Avalon Logs', position: 'left'},
+        ],
       },
-      footer: {
-        style: 'dark',
-        links: [],
-        copyright: `Copyright © ${new Date().getFullYear()} Keep on Boardgaming. Built with Docusaurus.`,
-      },
+      
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
