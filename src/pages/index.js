@@ -7,8 +7,8 @@ import styles from './index.module.css';
 
 const QUICK_LINKS = [
   {
-    title: 'BotC 플레이 어시스턴트',
-    description: 'Blood on the Clocktower 오프라인 플레이 도우미',
+    title: 'Blood on the Clocktower',
+    description: '오프라인 플레이 도우미',
     url: 'https://singwithgame.github.io/botc',
     sublinks: [
       { label: '📖 가이드', url: '/docs/botc/intro' },
@@ -50,23 +50,25 @@ function HomepageHeader() {
   );
 }
 
-function QuickLinkCard({title, url, sublinks}) {
+function QuickLinkCard({title, description, url, sublinks}) {
   return (
     <div className={clsx('col col--3', styles.cardCol)}>
-      <div className={clsx('card', styles.customCard)}>
-        <Link to={url} className={styles.cardLink}>
-          <div className="card__header">
-            <h3>{title}</h3>
-          </div>
-        </Link>
+      <div className={clsx('card', styles.customCard)} style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+        <div className="card__header text--center">
+          <h3 style={{ fontSize: '1.2rem', marginBottom: '10px' }}>{title}</h3>
+          <p style={{ fontSize: '0.9rem', color: 'var(--ifm-color-emphasis-700)', marginBottom: '0' }}>{description}</p>
+        </div>
+        <div className="card__body" style={{ display: 'flex', flexGrow: 1, alignItems: 'center', justifyContent: 'center' }}>
+          <Link to={url} className="button button--primary button--lg button--block">
+            🎮 앱 실행하기
+          </Link>
+        </div>
         {sublinks && sublinks.length > 0 && (
-          <div className="card__footer" style={{ borderTop: '1px solid var(--ifm-color-emphasis-200)', marginTop: 'auto', paddingTop: '10px' }}>
+          <div className="card__footer" style={{ borderTop: '1px solid var(--ifm-color-emphasis-200)', marginTop: 'auto', paddingTop: '15px', display: 'flex', gap: '10px' }}>
             {sublinks.map((sub, i) => (
-              <div key={i} style={{ marginBottom: '5px' }}>
-                <Link to={sub.url} className="button button--secondary button--md button--block">
-                  {sub.label}
-                </Link>
-              </div>
+              <Link key={i} to={sub.url} className="button button--secondary button--sm" style={{ flex: 1 }}>
+                {sub.label}
+              </Link>
             ))}
           </div>
         )}
@@ -81,6 +83,7 @@ export default function Home() {
     <Layout
       title={`Home`}
       description="보드게임 모임 포털 - 규칙서 및 세션 기록">
+      <HomepageHeader />
       <main>
         <section className={styles.quickLinksSection}>
           <div className="container">

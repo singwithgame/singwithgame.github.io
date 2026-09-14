@@ -68,7 +68,7 @@ const config = {
         id: 'botc-logs',
         path: 'botc-logs',
         routeBasePath: 'botc-logs',
-        sidebarPath: false,
+        sidebarPath: './sidebarsBotcLogs.js',
       },
     ],
     [
@@ -77,7 +77,7 @@ const config = {
         id: 'avalon-logs',
         path: 'avalon-logs',
         routeBasePath: 'avalon-logs',
-        sidebarPath: false,
+        sidebarPath: './sidebarsAvalonLogs.js',
       },
     ],
   ],
