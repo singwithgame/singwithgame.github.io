@@ -12,7 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Keep on Boardgaming',
   tagline: '보드게임 모임 포털',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -52,21 +52,7 @@ const config = {
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -74,6 +60,31 @@ const config = {
     ],
   ],
 
+
+  plugins: [
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'botc-logs',
+        routeBasePath: 'botc-logs',
+        path: './botc-logs',
+        blogTitle: 'BotC Logs',
+        blogSidebarTitle: '최근 기록',
+        showReadingTime: false,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'avalon-logs',
+        routeBasePath: 'avalon-logs',
+        path: './avalon-logs',
+        blogTitle: 'Avalon Logs',
+        blogSidebarTitle: '최근 기록',
+        showReadingTime: false,
+      },
+    ],
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -84,15 +95,12 @@ const config = {
         respectPrefersColorScheme: false,
       },
       navbar: {
-        title: '포털',
+        title: 'Home',
         logo: {
           alt: 'Logo',
           src: 'img/logo.svg',
         },
-        items: [
-          {to: '/docs/intro', label: 'Guides', position: 'left'},
-          {to: '/blog', label: 'Logs', position: 'left'},
-        ],
+        items: [],
       },
       footer: {
         style: 'dark',
