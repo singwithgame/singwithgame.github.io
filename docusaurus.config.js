@@ -63,27 +63,21 @@ const config = {
 
   plugins: [
     [
-      '@docusaurus/plugin-content-blog',
+      '@docusaurus/plugin-content-docs',
       {
         id: 'botc-logs',
+        path: 'botc-logs',
         routeBasePath: 'botc-logs',
-        path: './botc-logs',
-        blogTitle: 'BotC Logs',
-        blogSidebarTitle: '최근 기록',
-        blogSidebarCount: 'ALL',
-        showReadingTime: false,
+        sidebarPath: false,
       },
     ],
     [
-      '@docusaurus/plugin-content-blog',
+      '@docusaurus/plugin-content-docs',
       {
         id: 'avalon-logs',
+        path: 'avalon-logs',
         routeBasePath: 'avalon-logs',
-        path: './avalon-logs',
-        blogTitle: 'Avalon Logs',
-        blogSidebarTitle: '최근 기록',
-        blogSidebarCount: 'ALL',
-        showReadingTime: false,
+        sidebarPath: false,
       },
     ],
   ],

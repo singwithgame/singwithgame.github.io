@@ -11,8 +11,8 @@ const QUICK_LINKS = [
     description: 'Blood on the Clocktower 오프라인 플레이 도우미',
     url: 'https://singwithgame.github.io/botc',
     sublinks: [
-      { label: '📖 가이드 보기', url: '/docs/botc/intro' },
-      { label: '📜 세션 기록', url: '/botc-logs' }
+      { label: '📖 가이드', url: '/docs/botc/intro' },
+      { label: '📜 플레이 기록', url: '/botc-logs' }
     ]
   },
   {
@@ -20,8 +20,8 @@ const QUICK_LINKS = [
     description: 'The Resistance: Avalon 게임 진행 도우미 (New)',
     url: 'https://singwithgame.github.io/avalon_new',
     sublinks: [
-      { label: '📖 가이드 보기', url: '/docs/avalon' },
-      { label: '📜 세션 기록', url: '/avalon-logs' }
+      { label: '📖 가이드', url: '/docs/avalon' },
+      { label: '📜 플레이 기록', url: '/avalon-logs' }
     ]
   },
   {
@@ -63,7 +63,7 @@ function QuickLinkCard({title, url, sublinks}) {
           <div className="card__footer" style={{ borderTop: '1px solid var(--ifm-color-emphasis-200)', marginTop: 'auto', paddingTop: '10px' }}>
             {sublinks.map((sub, i) => (
               <div key={i} style={{ marginBottom: '5px' }}>
-                <Link to={sub.url} className="button button--secondary button--sm button--block">
+                <Link to={sub.url} className="button button--secondary button--md button--block">
                   {sub.label}
                 </Link>
               </div>
@@ -81,7 +81,6 @@ export default function Home() {
     <Layout
       title={`Home`}
       description="보드게임 모임 포털 - 규칙서 및 세션 기록">
-      <HomepageHeader />
       <main>
         <section className={styles.quickLinksSection}>
           <div className="container">
