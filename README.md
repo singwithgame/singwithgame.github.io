@@ -1,43 +1,33 @@
-# Website
+# Keep on Boardgaming 🎲
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+**Keep on Boardgaming**은 보드게임 모임 참여자를 위한 자체 웹 포털입니다. 기존 노션(Notion) 기반의 단방향 텍스트 페이지를 대체하고, 빠르고 직관적인 정보 검색 및 기록 보관을 위해 [Docusaurus](https://docusaurus.io/)를 활용하여 구축되었습니다.
 
-## Installation
+## 🎯 주요 기능
+
+*   **메인 페이지 (Home)**: BotC(Blood on the Clocktower) 어시스턴트, Avalon, Tichu.be 등 자주 사용하는 외부 보조 웹앱으로 바로 이동할 수 있는 퀵 링크 카드를 제공합니다.
+*   **가이드 및 룰북 (Guides)**: 게임별 룰 요약, 캐릭터 가이드, 모임 기본 수칙 등을 계층형 마크다운 구조로 깔끔하게 제공합니다.
+*   **플레이 기록 (Logs)**: 모임 날짜별 세션 기록을 남기고, 태그 필터링을 통해 과거 플레이 기록을 쉽게 검색할 수 있는 아카이브입니다.
+
+## 📁 디렉토리 구조
+
+문서 및 기록 작성은 아래 폴더에서 마크다운(`.md`, `.mdx`) 형식으로 진행합니다.
+
+*   `docs/`: 가이드 및 룰북 문서를 보관합니다.
+*   `blog/`: 플레이 세션 기록(날짜별)을 보관합니다.
+*   `src/`: 메인 페이지 UI 및 커스텀 React 컴포넌트를 보관합니다.
+
+## 🚀 로컬 실행 방법
+
+포털에 새로운 문서를 작성하거나 수정할 때, 로컬 환경에서 미리 확인해 볼 수 있습니다.
 
 ```bash
+# 의존성 설치
 npm install
+
+# 로컬 개발 서버 실행 (실시간 변경사항 확인 가능)
+npm start
 ```
 
-**Note**: feel free to use the package manager of your choice.
+## 🌐 자동 배포
 
-## Local Development
-
-```bash
-npm run start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
-
-```bash
-npm run build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-## Deployment
-
-Using SSH:
-
-```bash
-USE_SSH=true npm run deploy
-```
-
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> npm run deploy
-```
-
-If you are using GitHub Pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+본 저장소의 `main` 브랜치에 코드나 문서(Markdown)를 커밋하여 Push하면, GitHub Actions가 자동으로 빌드를 수행하고 **GitHub Pages**에 최신 버전을 배포합니다.
