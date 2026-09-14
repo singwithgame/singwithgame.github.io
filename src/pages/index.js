@@ -28,7 +28,7 @@ const QUICK_LINKS = [
     sublinks: []
   },
   {
-    title: 'Tichu.be',
+    title: 'Tichu',
     url: 'http://tichu.be',
     sublinks: []
   },
