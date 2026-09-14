@@ -8,6 +8,23 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+
+// Reverse sidebar items recursively, but keep index at top
+function reverseSidebar(items) {
+  const isIndex = (item) => item.type === 'doc' && item.id === 'index';
+  const indexItems = items.filter(isIndex);
+  const otherItems = items.filter((item) => !isIndex(item));
+  
+  const reversedOthers = otherItems.map((item) => {
+    if (item.type === 'category') {
+      return {...item, items: reverseSidebar(item.items)};
+    }
+    return item;
+  });
+  reversedOthers.reverse();
+  return [...indexItems, ...reversedOthers];
+}
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Keep on Boardgaming',
@@ -69,6 +86,10 @@ const config = {
         path: 'botc-logs',
         routeBasePath: 'botc-logs',
         sidebarPath: './sidebarsBotcLogs.js',
+        async sidebarItemsGenerator({defaultSidebarItemsGenerator, ...args}) {
+          const sidebarItems = await defaultSidebarItemsGenerator(args);
+          return reverseSidebar(sidebarItems);
+        },
       },
     ],
     [
@@ -78,6 +99,10 @@ const config = {
         path: 'avalon-logs',
         routeBasePath: 'avalon-logs',
         sidebarPath: './sidebarsAvalonLogs.js',
+        async sidebarItemsGenerator({defaultSidebarItemsGenerator, ...args}) {
+          const sidebarItems = await defaultSidebarItemsGenerator(args);
+          return reverseSidebar(sidebarItems);
+        },
       },
     ],
   ],
