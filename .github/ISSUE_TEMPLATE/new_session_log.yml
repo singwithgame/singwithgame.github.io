@@ -1,0 +1,37 @@
+name: "📜 새로운 플레이 기록(로그) 추가"
+description: "플레이했던 게임의 세션 기록을 추가합니다."
+title: "[로그] "
+labels: ["log"]
+body:
+  - type: dropdown
+    id: game_type
+    attributes:
+      label: "게임 선택"
+      options:
+        - "BotC (블러드 온 더 클락타워)"
+        - "Avalon (아발론)"
+    validations:
+      required: true
+  - type: input
+    id: play_date
+    attributes:
+      label: "플레이 날짜"
+      description: "YYYY-MM-DD 형식으로 입력해주세요."
+      placeholder: "예: 2026-09-14"
+    validations:
+      required: true
+  - type: input
+    id: log_title
+    attributes:
+      label: "세션 제목"
+      description: "이번 세션의 인상 깊은 제목을 지어주세요."
+      placeholder: "예: 악마의 완벽한 승리"
+    validations:
+      required: true
+  - type: textarea
+    id: log_body
+    attributes:
+      label: "내용"
+      description: "마크다운 형식으로 세션 기록을 작성해주세요."
+    validations:
+      required: true

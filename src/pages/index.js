@@ -89,6 +89,34 @@ export default function Home() {
           </div>
         </section>
       </main>
+
+      {/* Floating Action Button for writing logs */}
+      <a 
+        href="https://github.com/singwithgame/singwithgame.github.io/issues/new/choose" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="button button--primary"
+        style={{
+          position: 'fixed',
+          bottom: '30px',
+          left: '30px',
+          borderRadius: '50px',
+          padding: '12px 24px',
+          boxShadow: '0 4px 12px rgba(0,0,0,0.3)',
+          zIndex: 100,
+          display: 'flex',
+          alignItems: 'center',
+          gap: '8px',
+          fontSize: '1rem',
+          fontWeight: 'bold',
+        }}
+      >
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M12 20h9"></path>
+          <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+        </svg>
+        새 글 작성
+      </a>
     </Layout>
   );
 }
