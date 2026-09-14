@@ -8,18 +8,23 @@ import styles from './index.module.css';
 const QUICK_LINKS = [
   {
     title: 'BotC 플레이 어시스턴트',
-    description: 'Blood on the Clocktower 오프라인 플레이를 돕는 웹 애플리케이션',
-    url: '#',
+    description: 'Blood on the Clocktower 오프라인 플레이 도우미',
+    url: 'http://botckr.github.io/botc',
   },
   {
     title: 'Avalon',
-    description: 'The Resistance: Avalon 게임 진행 도우미',
-    url: '#',
+    description: 'The Resistance: Avalon 게임 진행 도우미 (New)',
+    url: 'https://avalonkr.github.io/avalon_new/',
+  },
+  {
+    title: 'Dalmuti',
+    description: '위대한 달무티 도우미',
+    url: 'https://dalmuti-kr.github.io',
   },
   {
     title: 'Tichu.be',
     description: '티츄 점수 계산기',
-    url: 'https://tichu.be',
+    url: 'http://tichu.be',
   },
 ];
 
@@ -37,7 +42,7 @@ function HomepageHeader() {
 
 function QuickLinkCard({title, description, url}) {
   return (
-    <div className={clsx('col col--4', styles.cardCol)}>
+    <div className={clsx('col col--3', styles.cardCol)}>
       <Link to={url} className={styles.cardLink}>
         <div className={clsx('card', styles.customCard)}>
           <div className="card__header">
