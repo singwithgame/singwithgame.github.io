@@ -9,17 +9,17 @@ const QUICK_LINKS = [
   {
     title: 'BotC 플레이 어시스턴트',
     description: 'Blood on the Clocktower 오프라인 플레이 도우미',
-    url: 'http://botckr.github.io/botc',
+    url: 'https://singwithgame.github.io/botc',
   },
   {
     title: 'Avalon',
     description: 'The Resistance: Avalon 게임 진행 도우미 (New)',
-    url: 'https://avalonkr.github.io/avalon_new/',
+    url: 'https://singwithgame.github.io/avalon_new',
   },
   {
     title: 'Dalmuti',
     description: '위대한 달무티 도우미',
-    url: 'https://dalmuti-kr.github.io',
+    url: 'https://singwithgame.github.io/dalmuti',
   },
   {
     title: 'Tichu.be',
