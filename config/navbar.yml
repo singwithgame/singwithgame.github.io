@@ -3,7 +3,7 @@
 # to: 이동할 링크 주소
 
 - label: "Guides"
-  to: "/docs/intro"
+  to: "/docs/botc/intro"
 - label: "BotC Logs"
   to: "/botc-logs"
 - label: "Avalon Logs"
