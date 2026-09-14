@@ -123,7 +123,7 @@ const config = {
           src: 'img/favicon.svg',
         },
         items: [
-          {to: '/docs/botc/intro', label: 'Guides', position: 'left'},
+          {to: '/docs/intro', label: 'Guides', position: 'left'},
           {to: '/botc-logs', label: 'BotC Logs', position: 'left'},
           {to: '/avalon-logs', label: 'Avalon Logs', position: 'left'},
         ],

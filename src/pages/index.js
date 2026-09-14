@@ -10,7 +10,7 @@ const QUICK_LINKS = [
     title: 'Blood on the Clocktower',
     url: 'https://singwithgame.github.io/botc',
     sublinks: [
-      { label: '📖 가이드', url: '/docs/botc/intro' },
+      { label: '📖 가이드', url: '/docs/intro' },
       { label: '📜 플레이 기록', url: '/botc-logs' }
     ]
   },
@@ -18,7 +18,7 @@ const QUICK_LINKS = [
     title: 'Avalon',
     url: 'https://singwithgame.github.io/avalon_new',
     sublinks: [
-      { label: '📖 가이드', url: '/docs/avalon' },
+      { label: '📖 가이드', url: '/docs/intro' },
       { label: '📜 플레이 기록', url: '/avalon-logs' }
     ]
   },
@@ -26,14 +26,16 @@ const QUICK_LINKS = [
     title: 'Dalmuti',
     url: 'https://singwithgame.github.io/dalmuti',
     sublinks: [
-      { label: '📖 가이드', url: '/docs/common/the-great-dalmuti' }
+      { label: '📖 가이드', url: '/docs/intro' }
     ]
   },
   {
     title: 'Tichu',
     url: 'http://tichu.be',
-    sublinks: []
-  },
+    sublinks: [
+      { label: '📖 가이드', url: '/docs/intro' }
+    ]
+  }
 ];
 
 function HomepageHeader() {
