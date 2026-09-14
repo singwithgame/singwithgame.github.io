@@ -49,18 +49,18 @@ function QuickLinkCard({title, url, sublinks}) {
   return (
     <div className={clsx('col col--3', styles.cardCol)} style={{ marginBottom: '20px' }}>
       <div className={clsx('card', styles.customCard)} style={{ display: 'flex', flexDirection: 'column', height: '100%', padding: '20px' }}>
-        <div className="card__header text--center" style={{ padding: '0 0 16px 0' }}>
-          <h3 style={{ fontSize: '1.6rem', margin: 0, fontWeight: '700', wordBreak: 'keep-all' }}>{title}</h3>
+        <div className="card__header text--center" style={{ padding: '0 0 16px 0', minHeight: '80px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <h3 style={{ fontSize: '1.6rem', margin: 0, fontWeight: '700', wordBreak: 'keep-all', lineHeight: '1.3' }}>{title}</h3>
         </div>
-        <div className="card__body" style={{ display: 'flex', flexGrow: 1, alignItems: 'center', justifyContent: 'center', padding: '0 0 16px 0' }}>
-          <Link to={url} className="button button--secondary button--block" style={{ fontSize: '1.2rem', padding: '12px', borderWidth: '1px', borderColor: 'var(--ifm-color-emphasis-300)', color: 'var(--ifm-font-color-base)' }}>
+        <div className="card__body" style={{ display: 'flex', flexGrow: 1, alignItems: 'flex-start', justifyContent: 'center', padding: '0 0 16px 0' }}>
+          <Link to={url} className="button button--secondary button--block play-btn" style={{ fontSize: '1.2rem', padding: '12px', borderWidth: '1px' }}>
             🎮 Play
           </Link>
         </div>
         {sublinks && sublinks.length > 0 && (
           <div className="card__footer" style={{ borderTop: '1px solid var(--ifm-color-emphasis-200)', marginTop: 'auto', paddingTop: '16px', display: 'flex', gap: '8px', flexWrap: 'wrap', justifyContent: 'center' }}>
             {sublinks.map((sub, i) => (
-              <Link key={i} to={sub.url} className="button button--secondary button--sm" style={{ flexGrow: 1, minWidth: '40%', fontSize: '0.9rem', backgroundColor: 'transparent', border: '1px solid var(--ifm-color-emphasis-200)', color: 'var(--ifm-color-emphasis-700)' }}>
+              <Link key={i} to={sub.url} className="button button--secondary button--sm sublink-btn" style={{ flexGrow: 1, minWidth: '40%', fontSize: '0.9rem', borderWidth: '1px' }}>
                 {sub.label}
               </Link>
             ))}

@@ -62,6 +62,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 3rem;
 }
 
+/* StyleSeed: Interactive refinement */
 .card {
   box-shadow: none !important;
   border: 1px solid var(--ifm-color-emphasis-200);
@@ -81,22 +82,28 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
 }
 
-[data-theme='light'] .button--primary {
-  color: #ffffff !important;
-}
-
-/* StyleSeed: Interactive refinement */
-.card .card__body .button--secondary {
+.play-btn {
+  background-color: transparent !important;
+  border-color: var(--ifm-color-emphasis-300) !important;
+  color: var(--ifm-font-color-base) !important;
   transition: all 0.2s ease;
 }
 
-.card:hover .card__body .button--secondary {
-  background-color: var(--ifm-color-primary);
+.card:hover .play-btn {
+  background-color: var(--ifm-color-primary) !important;
   border-color: var(--ifm-color-primary) !important;
   color: #ffffff !important;
 }
 
-.card .card__footer .button--secondary:hover {
-  background-color: var(--ifm-color-emphasis-100) !important;
+.sublink-btn {
+  background-color: transparent !important;
+  border-color: var(--ifm-color-emphasis-300) !important;
+  color: var(--ifm-font-color-base) !important;
+  transition: all 0.2s ease;
+}
+
+.sublink-btn:hover {
+  background-color: var(--ifm-color-emphasis-200) !important;
   border-color: var(--ifm-color-emphasis-400) !important;
+  color: var(--ifm-font-color-base) !important;
 }
