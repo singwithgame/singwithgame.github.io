@@ -3,7 +3,7 @@ import Link from '@docusaurus/Link';
 
 export default function GameCard({ title, url, guideUrl, logUrl }) {
   return (
-    <div className="col col--12 col--sm-6 col--lg-3" style={{ marginBottom: '20px' }}>
+    <div className="responsive-col" style={{ marginBottom: '20px' }}>
       <div className="card" style={{ display: 'flex', flexDirection: 'column', height: '100%', padding: '20px' }}>
         <div className="card__header text--center" style={{ padding: '0 0 16px 0', minHeight: '80px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <h3 style={{ fontSize: '1.6rem', margin: 0, fontWeight: '700', wordBreak: 'keep-all', lineHeight: '1.3' }}>{title}</h3>

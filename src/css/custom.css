@@ -109,3 +109,22 @@ h1, h2, h3, h4, h5, h6 {
   border-color: var(--ifm-color-emphasis-400);
   color: var(--ifm-font-color-base);
 }
+
+/* Responsive grid for Game Cards */
+.responsive-col {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 var(--ifm-spacing-horizontal);
+}
+@media (min-width: 576px) {
+  .responsive-col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media (min-width: 996px) {
+  .responsive-col {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
