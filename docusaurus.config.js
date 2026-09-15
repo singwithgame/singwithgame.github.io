@@ -84,6 +84,15 @@ const config = {
 
   plugins: [
     [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "diplomacy-logs",
+        path: "diplomacy-logs",
+        routeBasePath: "diplomacy-logs",
+        sidebarPath: "./sidebarsDiplomacyLogs.js",
+      },
+    ],
+    [
       '@docusaurus/plugin-content-docs',
       {
         id: 'botc-logs',

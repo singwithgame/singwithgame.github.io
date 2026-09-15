@@ -8,3 +8,5 @@
   to: "/botc-logs"
 - label: "Avalon Logs"
   to: "/avalon-logs"
+- label: "Diplo Logs"
+  to: "/diplomacy-logs"
