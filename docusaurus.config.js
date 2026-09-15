@@ -83,6 +83,7 @@ const config = {
 
 
   plugins: [
+    "docusaurus-plugin-image-zoom",
     [
       "@docusaurus/plugin-content-docs",
       {
@@ -122,6 +123,13 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      zoom: {
+        selector: ".markdown img",
+        background: {
+          light: "rgba(255, 255, 255, 0.9)",
+          dark: "rgba(18, 18, 18, 0.9)",
+        },
+      },
       // Replace with your project's social card
       image: 'img/hero.jpg',
       colorMode: {
