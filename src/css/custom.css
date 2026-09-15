@@ -1,4 +1,4 @@
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
@@ -53,9 +53,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero {
-  background-color: transparent !important;
-  color: var(--ifm-font-color-base) !important;
-  padding: 4rem 0 !important;
+  background-color: transparent;
+  color: var(--ifm-font-color-base);
+  padding: 4rem 0;
 }
 
 .hero__title {
@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* StyleSeed: Interactive refinement */
 .card {
-  box-shadow: none !important;
+  box-shadow: none;
   border: 1px solid var(--ifm-color-emphasis-200);
   border-radius: 12px;
   transition: transform 0.2s ease, border-color 0.2s ease;
@@ -78,34 +78,34 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .button--primary {
-  color: #ffffff !important;
+  color: #ffffff;
   font-weight: 500;
   letter-spacing: 0px;
   border: none;
 }
 
 .play-btn {
-  background-color: transparent !important;
-  border-color: var(--ifm-color-emphasis-300) !important;
-  color: var(--ifm-font-color-base) !important;
+  background-color: transparent;
+  border-color: var(--ifm-color-emphasis-300);
+  color: var(--ifm-font-color-base);
   transition: all 0.2s ease;
 }
 
 .card:hover .play-btn {
-  background-color: var(--ifm-color-primary) !important;
-  border-color: var(--ifm-color-primary) !important;
-  color: #ffffff !important;
+  background-color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+  color: #ffffff;
 }
 
 .sublink-btn {
-  background-color: transparent !important;
-  border-color: var(--ifm-color-emphasis-300) !important;
-  color: var(--ifm-font-color-base) !important;
+  background-color: transparent;
+  border-color: var(--ifm-color-emphasis-300);
+  color: var(--ifm-font-color-base);
   transition: all 0.2s ease;
 }
 
 .sublink-btn:hover {
-  background-color: var(--ifm-color-emphasis-200) !important;
-  border-color: var(--ifm-color-emphasis-400) !important;
-  color: var(--ifm-font-color-base) !important;
+  background-color: var(--ifm-color-emphasis-200);
+  border-color: var(--ifm-color-emphasis-400);
+  color: var(--ifm-font-color-base);
 }
