@@ -21,7 +21,7 @@
   --ifm-font-color-base: #26251e;
   
   --ifm-heading-font-family: "Pretendard", -apple-system, system-ui, sans-serif;
-  --ifm-font-family-base: "Pretendard", -apple-system, system-ui, sans-serif;
+
   
   --ifm-card-background-color: #ffffff;
   
@@ -176,4 +176,16 @@ h1, h2, h3, h4, h5, h6 {
 .game-card__sublink-btn {
   font-size: 0.9rem;
   border-width: 1px;
+}
+
+/* Hero Section Extracted Styles */
+.hero-wrapper {
+  text-align: center;
+  margin: 4rem 0 2rem 0;
+}
+.hero-image {
+  max-width: 540px;
+  width: 80%;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(18, 18, 18, 0.8);
 }
