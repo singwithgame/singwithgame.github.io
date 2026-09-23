@@ -3,7 +3,7 @@ sidebar_position: 1
 title: BotC 게임 소개
 ---
 
-# BotC 게임 소개
+# Blood on the Clocktower 게임 소개
 
 기존 마피아 게임의 단점(첫날 탈락자의 지루함, 능력 없는 시민의 소외 등)을 완벽히 보완한 하이엔드 추리 게임입니다.
 

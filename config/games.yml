@@ -17,6 +17,9 @@
   url: "https://singwithgame.github.io/dalmuti"
   guideUrl: "/docs/the-great-dalmuti"
 
+- title: "One Night Ultimate Werewolf"
+  url: "https://singwithgame.github.io/one_night_werewolf"
+
 - title: "Tichu"
-  url: "http://tichu.be"
+  url: "https://tichu.be"
   guideUrl: "/docs/tichu/tichu_guide"

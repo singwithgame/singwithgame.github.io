@@ -1,11 +1,11 @@
 ---
 sidebar_position: 2
-title: BotC 캐릭터 가이드
+title: BotC Trouble Brewing 캐릭터 가이드
 ---
 
-# BotC 캐릭터 가이드
+# BotC Trouble Brewing 캐릭터 가이드
 
-이 문서에서는 **Blood on the Clocktower (사악한 종소리)** - *Trouble Brewing (문제 발생)* 시나리오에 등장하는 모든 캐릭터의 능력과 기본 전략을 소개합니다.
+이 문서에서는 **Blood on the Clocktower (시계탑에 흐른 피)** - *Trouble Brewing (문제 발생)* 시나리오에 등장하는 모든 캐릭터의 능력과 기본 전략을 소개합니다.
 
 ---
 
