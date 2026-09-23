@@ -1,9 +1,20 @@
 # 최상단 네비게이션 바 메뉴 설정
 # label: 메뉴 이름
 # to: 이동할 링크 주소
+# 하위 메뉴가 필요한 경우 items 리스트 사용
 
 - label: "Guides"
-  to: "/docs/botc/intro"
+  items:
+    - label: "BotC (시계탑)"
+      to: "/docs/botc/intro"
+    - label: "Avalon (아발론)"
+      to: "/docs/avalon"
+    - label: "Tichu (티츄)"
+      to: "/docs/tichu/tichu_guide"
+    - label: "Dalmuti (달무티)"
+      to: "/docs/the-great-dalmuti"
+    - label: "Diplomacy (디플로머시)"
+      to: "/docs/diplomacy"
 - label: "BotC Logs"
   to: "/botc-logs"
 - label: "Avalon Logs"

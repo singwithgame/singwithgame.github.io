@@ -59,6 +59,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero__title {
+  word-break: keep-all;
+  overflow-wrap: break-word;
   letter-spacing: -2px;
   font-weight: 700;
   font-size: 3rem;
@@ -180,6 +182,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hero Section Extracted Styles */
 .hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   margin: 4rem 0 2rem 0;
 }
@@ -188,4 +193,28 @@ h1, h2, h3, h4, h5, h6 {
   width: 80%;
   border-radius: 20px;
   box-shadow: 0 8px 24px rgba(18, 18, 18, 0.8);
+}
+
+/* Mobile adjustments for Hero section */
+@media screen and (max-width: 768px) {
+  .hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    margin: 2rem 0 1rem 0;
+  }
+  .hero__title {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+    font-size: 2rem;
+    margin-bottom: 1.5rem !important;
+  }
+  .hero-image {
+    width: 100%;
+    height: auto;
+  }
 }
