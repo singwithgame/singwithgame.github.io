@@ -3,7 +3,7 @@ title: Home
 hide_table_of_contents: true
 ---
 
-import GameCard from '@site/src/components/GameCard';
+import GameList from '@site/src/components/GameList';
 
 <div className="hero hero-wrapper">
   <h1 className="hero__title" style={{ marginBottom: '2rem' }}>Keep on Boardgaming</h1>
@@ -11,35 +11,7 @@ import GameCard from '@site/src/components/GameCard';
     src="/img/hero.jpg" 
     alt="Boardgaming Hero" 
     className="hero-image"
-    width="540"
-    height="303"
   />
 </div>
 
-<div className="container" style={{ paddingBottom: '5rem' }}>
-  <div className="row">
-    <GameCard 
-      title="Blood on the Clocktower" 
-      url="https://singwithgame.github.io/botc" 
-      guideUrl="/docs/botc/intro" 
-      logUrl="/botc-logs" 
-    />
-    <GameCard 
-      title="Avalon" 
-      url="https://singwithgame.github.io/avalon_new" 
-      guideUrl="/docs/avalon" 
-      logUrl="/avalon-logs" 
-    />
-    <GameCard 
-      title="Dalmuti" 
-      url="https://singwithgame.github.io/dalmuti" 
-      guideUrl="/docs/the-great-dalmuti" 
-    />
-    <GameCard 
-      title="Tichu" 
-      url="http://tichu.be" 
-      guideUrl="/docs/tichu/tichu_guide" 
-    />
-  </div>
-</div>
-
+<GameList />

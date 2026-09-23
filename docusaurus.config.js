@@ -29,6 +29,9 @@ function reverseSidebar(items) {
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  customFields: {
+    games: yaml.load(fs.readFileSync("./config/games.yml", "utf8")),
+  },
   title: 'Keep on Boardgaming',
   tagline: '보드게임 모임 포털',
   favicon: 'img/favicon.svg',
