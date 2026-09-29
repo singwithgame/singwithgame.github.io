@@ -24,6 +24,7 @@
 - title: "One Night Ultimate Werewolf"
   players: "3~10인"
   url: "https://singwithgame.github.io/one_night_werewolf"
+  guideUrl: "/docs/onuw_character"
 
 - title: "Tichu"
   players: "4인 전용"
