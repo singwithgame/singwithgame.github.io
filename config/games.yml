@@ -1,25 +1,31 @@
 # 홈페이지에 표시될 게임 카드 목록입니다.
+# players: 가용 인원 수 (옵션, 예: "5~20인")
 # url: 외부 링크 (옵션)
 # guideUrl: 내부 가이드 링크 (옵션)
 # logUrl: 세션 기록 링크 (옵션)
 
 - title: "Blood on the Clocktower"
+  players: "5~20인"
   url: "https://singwithgame.github.io/botc"
   guideUrl: "/docs/botc/intro"
   logUrl: "/botc-logs"
 
 - title: "Avalon"
+  players: "5~10인"
   url: "https://singwithgame.github.io/avalon_new"
   guideUrl: "/docs/avalon"
   logUrl: "/avalon-logs"
 
 - title: "Dalmuti"
+  players: "4~8인"
   url: "https://singwithgame.github.io/dalmuti"
   guideUrl: "/docs/the-great-dalmuti"
 
 - title: "One Night Ultimate Werewolf"
+  players: "3~10인"
   url: "https://singwithgame.github.io/one_night_werewolf"
 
 - title: "Tichu"
+  players: "4인 전용"
   url: "https://tichu.be"
   guideUrl: "/docs/tichu/tichu_guide"

@@ -12,10 +12,7 @@ export default function GameList() {
         {games.map((game, idx) => (
           <GameCard 
             key={idx} 
-            title={game.title} 
-            url={game.url} 
-            guideUrl={game.guideUrl} 
-            logUrl={game.logUrl} 
+            {...game}
           />
         ))}
       </div>

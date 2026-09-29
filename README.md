@@ -34,6 +34,7 @@
 홈 화면에 새로운 보드게임 카드를 띄우려면, 복잡한 HTML 없이 아래 양식을 `games.yml` 맨 아래에 추가하기만 하면 됩니다.
 ```yaml
 - title: "새로운 보드게임"
+  players: "3~5인"                       # 가용 인원 수 (옵션)
   url: "https://singwithgame.github.io/new_game"  # 도우미 앱 외부 링크 (옵션)
   guideUrl: "/docs/newgame/intro"               # 내부 가이드 링크 (옵션)
   logUrl: "/newgame-logs"                       # 세션 기록 링크 (옵션)
