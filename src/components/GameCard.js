@@ -7,14 +7,14 @@ export default function GameCard({ title, url, guideUrl, logUrl, players }) {
       <div className="card game-card">
         <div className="card__header text--center game-card__header">
           <h3 className="game-card__title">{title}</h3>
-          {players && (
-            <span className="game-card__players">
-              👥 {players}
-            </span>
-          )}
         </div>
         
         <div className="card__body game-card__body">
+          {players && (
+            <div className="game-card__players">
+              👥 {players}
+            </div>
+          )}
           {url && (
             <Link to={url} className="button button--secondary button--block play-btn game-card__play-btn">
               <span role="img" aria-label="Play">🎮</span> Play

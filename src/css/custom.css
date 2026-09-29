@@ -145,9 +145,9 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   padding: 0 0 16px 0;
-  min-height: 120px;
+  min-height: 85px;
 }
 .game-card__title {
   font-size: 1.6rem;
@@ -158,9 +158,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .game-card__body {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   padding: 0 0 16px 0;
+  width: 100%;
 }
 .game-card__play-btn {
   font-size: 1.2rem;
@@ -221,7 +223,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .game-card__players {
-  margin-top: 0.5rem;
+  margin-bottom: 12px;
   font-size: 0.9rem;
   font-weight: 600;
   color: var(--ifm-color-emphasis-600);
