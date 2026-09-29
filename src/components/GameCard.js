@@ -8,7 +8,7 @@ export default function GameCard({ title, url, guideUrl, logUrl, players }) {
         <div className="card__header text--center game-card__header">
           <h3 className="game-card__title">{title}</h3>
           {players && (
-            <span className="badge badge--info" style={{ marginTop: '0.5rem', fontWeight: 'bold' }}>
+            <span className="game-card__players">
               👥 {players}
             </span>
           )}

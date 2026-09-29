@@ -142,6 +142,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px;
 }
 .game-card__header {
+  flex-direction: column;
   padding: 0 0 16px 0;
   min-height: 80px;
   display: flex;
@@ -217,4 +218,11 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: auto;
   }
+}
+
+.game-card__players {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-600);
 }
