@@ -17,6 +17,11 @@
   guideUrl: "/docs/avalon"
   logUrl: "/avalon-logs"
 
+- title: "One Night Ultimate Werewolf"
+  players: "3~10인"
+  url: "https://singwithgame.github.io/one_night_werewolf"
+  guideUrl: "/docs/onuw_character"
+
 - title: "Ready Set Bet"
   players: "2~9인"
   url: "https://singwithgame.github.io/rsbkr/"
@@ -27,11 +32,6 @@
   players: "4~8인"
   url: "https://singwithgame.github.io/dalmuti"
   guideUrl: "/docs/the-great-dalmuti"
-
-- title: "One Night Ultimate Werewolf"
-  players: "3~10인"
-  url: "https://singwithgame.github.io/one_night_werewolf"
-  guideUrl: "/docs/onuw_character"
 
 - title: "Tichu"
   players: "4인 전용"

@@ -1,6 +1,6 @@
 ---
 title: 한밤의 늑대인간 캐릭터 가이드
-sidebar_position: 5
+sidebar_position: 3
 ---
 # 🌕 한밤의 늑대인간 (One Night Ultimate Werewolf) 캐릭터 가이드
 
