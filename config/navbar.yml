@@ -9,6 +9,8 @@
       to: "/docs/botc/intro"
     - label: "Avalon (아발론)"
       to: "/docs/avalon"
+    - label: "Ready Set Bet (레디 셋 벳)"
+      to: "/docs/ready-set-bet"
     - label: "Tichu (티츄)"
       to: "/docs/tichu/tichu_guide"
     - label: "Dalmuti (달무티)"

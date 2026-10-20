@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
 
-export default function GameCard({ title, url, guideUrl, logUrl, players }) {
+export default function GameCard({ title, url, guideUrl, companionAppUrl, logUrl, players }) {
   return (
     <div className="responsive-col game-card-wrapper">
       <div className="card game-card">
@@ -22,11 +22,16 @@ export default function GameCard({ title, url, guideUrl, logUrl, players }) {
           )}
         </div>
         
-        {(guideUrl || logUrl) && (
+        {(guideUrl || companionAppUrl || logUrl) && (
           <div className="card__footer game-card__footer">
             {guideUrl && (
               <Link to={guideUrl} className="button button--secondary button--sm sublink-btn game-card__sublink-btn">
                 <span role="img" aria-label="Guide">📖</span> 가이드
+              </Link>
+            )}
+            {companionAppUrl && (
+              <Link to={companionAppUrl} className="button button--secondary button--sm sublink-btn game-card__sublink-btn">
+                <span role="img" aria-label="Companion App">📱</span> 공식 컴패니언 앱
               </Link>
             )}
             {logUrl && (

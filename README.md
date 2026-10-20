@@ -37,6 +37,7 @@
   players: "3~5인"                       # 가용 인원 수 (옵션)
   url: "https://singwithgame.github.io/new_game"  # 도우미 앱 외부 링크 (옵션)
   guideUrl: "/docs/newgame/intro"               # 내부 가이드 링크 (옵션)
+  companionAppUrl: "https://..."                # 공식 컴패니언 앱 링크 (옵션)
   logUrl: "/newgame-logs"                       # 세션 기록 링크 (옵션)
 ```
 

@@ -2,6 +2,7 @@
 # players: 가용 인원 수 (옵션, 예: "5~20인")
 # url: 외부 링크 (옵션)
 # guideUrl: 내부 가이드 링크 (옵션)
+# companionAppUrl: 공식 컴패니언 앱 링크 (옵션)
 # logUrl: 세션 기록 링크 (옵션)
 
 - title: "Blood on the Clocktower"
@@ -15,6 +16,12 @@
   url: "https://singwithgame.github.io/avalon_new"
   guideUrl: "/docs/avalon"
   logUrl: "/avalon-logs"
+
+- title: "Ready Set Bet"
+  players: "2~9인"
+  url: "https://singwithgame.github.io/rsbkr/"
+  guideUrl: "/docs/ready-set-bet"
+  companionAppUrl: "https://nomadgames.co.uk/readysetbet"
 
 - title: "Dalmuti"
   players: "4~8인"
